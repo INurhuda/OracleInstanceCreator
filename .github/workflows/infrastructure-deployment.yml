@@ -14,7 +14,7 @@ on:
     # Oracle capacity events aren't predictable enough to justify skipping or
     # slowing down any window - checking as often as possible everywhere
     # gives the best odds of catching a capacity opening the moment it appears.
-    - cron: "* * * * *"
+    - cron: "*/1 * * * *"
 
   # Disabled to avoid triggering 429 on OCI API; also failures confuse claude when trying to fix PR checks
   # pull_request:
